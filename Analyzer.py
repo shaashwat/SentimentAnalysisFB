@@ -5,7 +5,7 @@ import json
 import re
 import requests
 
-access_token = 'EAAYFLQ8JBEQBAIFneGXevQh5qQzXVhkrrv8bdvAsiWOJfxibZAQDJZCNVp9NbBybnf4uM6wRjxfBRVRvavqQWIJ5ZBchUTg68t93dLQi7V7dtoADgX3GCs6WbhJGTnwLDGQpKZBQZBwrIASbvNFWeG3sJ35YrkJHtAt8uZBMH4mZBVXsFtmYYSZAuGWJcOK4B48ZD'
+access_token = 'EAAYFLQ8JBEQBADZCW8N0CGnLJzqmnQ675amrL2Qd9KoBr4rzU1HZASdJ0wNLZBG3hzBp9jmP9BN5zeH0ZBdEOt730Blel5sOjVsVuxYYB5Lhy20dJKhJYskPwD8A0ItxwFZBov7V8YOR0DRYEBb8T0191lw6xfNkZD'
 
 def getSentimentAnalysisScore(user, number_of_posts_limit=50, number_of_comments_limit=50):
     text = ""
@@ -30,4 +30,3 @@ def getSentimentAnalysisScore(user, number_of_posts_limit=50, number_of_comments
     blob = TextBlob(text)
     print(blob.polarity)
 
-print(getSentimentAnalysisScore("DonaldTrump"))
